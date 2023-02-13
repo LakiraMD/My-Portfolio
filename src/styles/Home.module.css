@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+
 }
 .section h1 {
   font-size: 36px;
@@ -15,6 +16,9 @@
   width: 60%;
   padding: 100px;
   text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  display: inline-block;
 }
 .textContainer .welcomheading {
   font-weight: bold;
