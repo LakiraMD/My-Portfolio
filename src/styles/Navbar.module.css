@@ -1,0 +1,124 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.scrolled {
+  background-color: var(--background-2);
+}
+.Navbar__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  position: relative;
+  transition: 0.4s linear;
+
+
+}
+.Navbar__item {
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  transition: 0.4s linear;
+
+}
+
+.Navbar__item.active {
+  border-bottom: 2px solid var(--pink);
+}
+
+.themetoggle {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.hamburger {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  
+}
+.hamburger__line {
+  width: 2rem;
+  height: 7px;
+  background-color: var(--pink);
+  margin: 0.2rem 0;
+  border-radius: 5px;
+  transition: 0.4s linear;
+}
+@media screen and (max-width: 768px) {
+  .Navbar{
+    background: var(--background-2);
+  }
+  .Navbar__items {
+    /* display: none; */
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: var(--background-2);
+    top: -240px;
+    transition: all 0.5s ease-in;
+  }
+  
+  .Navbar__item {
+    color: var(--text-color);
+  }
+  .Navbar__item.active {
+    border-bottom: none;
+  }
+  .Navbar__items.open {
+    transform: translateY(300px);
+    left: 0;
+    transition: all 0.5s ease-in-out;
+
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(0.5rem, 0.5rem);
+  }
+  .hamburger.open span:nth-child(2) {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+  }
+  .Navbar__item {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+}
