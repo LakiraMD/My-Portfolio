@@ -97,8 +97,11 @@
   font-size: 16px;
   width: 100%;
   box-sizing: border-box;
+  background: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 0.2rem ;
 }
-
 .textArea {
   width: 50%;
   height: 200px;
@@ -106,6 +109,14 @@
   font-size: 16px;
   box-sizing: border-box;
   resize: none;
+  background: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  border-radius: 0.2rem ;
+}
+.input:focus, .textArea:focus{
+  outline: none;
+  border-bottom: 2px solid var(--pink);
 }
 
 .button {

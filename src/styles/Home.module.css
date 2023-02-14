@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
-
+  min-height: 100vh;
+  overflow: hidden;
 }
 .section h1 {
   font-size: 36px;
@@ -14,7 +14,7 @@
 }
 .textContainer {
   width: 60%;
-  padding: 100px;
+  padding: 4rem;
   text-align: center;
   overflow: hidden;
   word-wrap: break-word;

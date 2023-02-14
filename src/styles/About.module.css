@@ -7,9 +7,9 @@
   margin-top: 60px;
 }
 .header {
-    padding: 4rem;
-    font-size: 1.5rem;
-    text-align: center;
+  padding: 4rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .headerImage {
   width: 30%;
@@ -24,11 +24,135 @@
   margin-bottom: 1.5rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-row-gap: 20px;
+  margin: 1.5rem auto;
+  align-items: flex-start;
+  justify-items: center;
+  width: 80%;
+}
+.gridItem {
+  width: 25rem;
+  min-height: 10rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: var(--background-2);
+  box-shadow: -4px 8px 24px #00000020;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.education {
+  height: 20rem;
+  grid-row: span 2;
+}
+.skills {
+  height: 30rem;
+  grid-row: span 3;
+}
+.achivements {
+  height: 30rem;
+  grid-row: span 3;
+}
+.experience {
+  height: 20rem;
+  grid-row: span 2;
+}
+.itemTitle {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  width: 80%;
+}
+.titleIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.titletext {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.timeline {
+  margin-top: 2rem;
+}
+.timeline .timelineItem {
+  list-style: none;
+  padding: 0;
+}
+.timelineItem {
+  padding-bottom: 1.5rem;
+  border-left: 3px solid var(--pink);
+  position: relative;
+  height: 5rem;
+}
+.timeline > li:last-child {
+  border: 0px;
+  margin-left: 3px;
+  padding-bottom: 0;
+}
+.timelineItem ::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--background-2);
+  border: 3px solid var(--pink);
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  top: 0px;
+}
+.timelineItemText {
+  font-weight: 500;
+  margin-left: 2rem;
+}
+.timelineItemPara {
+  margin-left: 2rem;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
 @media (max-width: 768px) {
- .header{
+  .header {
     width: 90%;
- }
- .paragraph {
+  }
+  .paragraph {
     width: 80%;
+  }
+  .grid {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
 }
+@media screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 2rem 0;
+    }
+    .paragraph{
+        width: 100;
+        padding: 2rem 0;
+        text-align: justify;
+    }
+  .headerImage{
+    width: 80%;
+  }
+  .grid {
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+  .gridItem{
+    width: 100%;
+  }
 }
+    
