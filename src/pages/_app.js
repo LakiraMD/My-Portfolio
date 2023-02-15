@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
           } else {
             loader.style.display = "none";
           }
-        }, 1000);
+        }, 3000);
       }
     }
   }, []);

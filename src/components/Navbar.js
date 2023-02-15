@@ -67,13 +67,11 @@ const Navbar = () => {
             About
           </a>
         </Link>
-        <Link href="https://blog.lakiramd.me" legacyBehavior>
+        <Link href="/blog" legacyBehavior>
           <a
             className={`${styles.Navbar__item} ${
               selected === "blog" ? styles.active : ""
             }`}
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Blog
           </a>
