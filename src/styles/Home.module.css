@@ -101,12 +101,13 @@
   }
   .imageContainer {
     width: 100%;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-bottom: 2rem;
     margin-right: 0;
   }
   .headingmobile{
     display: inline-block;
+    margin: 3rem;
   }
   .about .heading{
     display: none;

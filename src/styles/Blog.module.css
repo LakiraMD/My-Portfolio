@@ -107,6 +107,12 @@
   border-color: #40c057;
 }
 @media (max-width: 768px) {
+  .header {
+    width: 90%;
+  }
+  .paragraph {
+    width: 80%;
+  }
   .post{
     padding: 0.5rem;
   }
@@ -120,6 +126,7 @@
 }
 
 @media (max-width: 600px) {
+  
   .blogGrid {
     grid-template-columns: repeat(2, 1fr);
   }

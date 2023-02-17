@@ -163,5 +163,8 @@
 @media (max-width: 600px) {
   .grid {
     grid-template-columns: repeat(1, 1fr);
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
   }
 }
