@@ -98,7 +98,7 @@ function about() {
                 NSSC 2022, Merit
               </h4>
               <p className={styles.timelineItemPara}>
-                Secondary School, Since 2017
+                National School Software Competition, 2022
               </p>
             </li>
             <li className={styles.timelineItem}>
@@ -106,7 +106,7 @@ function about() {
                 SLRC 2021, Finalist
               </h4>
               <p className={styles.timelineItemPara}>
-                Primary School, 2011 - 2016
+                Sri Lanka Robotic Challange, 2021
               </p>
             </li>
           </ol>
