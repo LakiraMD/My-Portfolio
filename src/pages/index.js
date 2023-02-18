@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer";
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Preloader from "@/components/Preloader";
 import { gsap } from "gsap";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {

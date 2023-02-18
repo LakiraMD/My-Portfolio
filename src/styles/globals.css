@@ -32,6 +32,9 @@ body{
   background-color: var(--background-color);
   color: var(--text-color);
 }
+html {
+  scroll-behavior: smooth;
+}
 *{
   font-family: "Zilla Slab", serif;
 }

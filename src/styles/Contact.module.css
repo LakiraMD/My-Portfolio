@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   margin-top: 60px;
 }
 .header {
@@ -14,7 +13,6 @@
 .paragraph {
   text-align: center;
   width: 50%;
-  /* max-width: 500px; */
   font-size: 1.2rem;
   margin-bottom: 3rem;
 }
@@ -100,7 +98,7 @@
   background: var(--background-color);
   border: none;
   color: var(--text-color);
-  border-radius: 0.2rem ;
+  border-radius: 0.2rem;
 }
 .textArea {
   width: 50%;
@@ -112,9 +110,10 @@
   background: var(--background-color);
   border: none;
   color: var(--text-color);
-  border-radius: 0.2rem ;
+  border-radius: 0.2rem;
 }
-.input:focus, .textArea:focus{
+.input:focus,
+.textArea:focus {
   outline: none;
   border-bottom: 2px solid var(--pink);
 }
@@ -134,31 +133,30 @@
 @media (max-width: 768px) {
   .header {
     width: 90%;
+    padding: 4rem 0;
+    margin: 0;
   }
   .paragraph {
     width: 80%;
   }
   .grid {
-    grid-template-columns:repeat(2, 1fr);
-    /* grid-auto-rows: 100px; */
-
-}
-
-  .inputBox{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inputBox {
     width: 80%;
   }
-  .inputContainer{
+  .inputContainer {
     flex-direction: column;
     align-items: center;
-}
-  .inputContainerRight{
+    width: 100%;
+  }
+  .inputContainerRight {
     width: 95%;
     margin: 0;
   }
-  .textArea{
+  .textArea {
     width: 95%;
   }
-
 }
 @media (max-width: 600px) {
   .grid {
@@ -166,5 +164,8 @@
     width: fit-content;
     align-items: center;
     justify-content: center;
+  }
+  .inputBox {
+    padding: 2rem 1rem;
   }
 }

@@ -46,6 +46,12 @@ const blog= ()=> {
 
   return (
     <div className="component">
+      <Head>
+          <title>Blog | Lakira Minlaka</title>
+          <meta name="description" content="lakiramd.me contact page" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
       <div className={styles.container}>
         <div className={styles.header}>
           <h1>Uncovering the secrets of Technology</h1>
