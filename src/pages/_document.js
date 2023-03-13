@@ -10,9 +10,9 @@ export default function Document() {
       <body>
         <div id={"globalLoader"}>
           <div className="loader">
-            <div class="loader"></div>
-            <div class="loader"></div>
-            <div class="loader"></div>
+            <div className="loader"></div>
+            <div className="loader"></div>
+            <div className="loader"></div>
           </div>
         </div>
         <Main />
