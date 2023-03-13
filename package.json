@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.6",
+    "@vercel/analytics": "^0.1.11",
     "graphql": "^16.6.0",
     "graphql-request": "^5.1.0",
     "gsap": "^3.11.4",

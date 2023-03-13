@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import React, { useState, useEffect } from "react";
 import ThemeContext from "../context/themeContext";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App({ Component, pageProps }) {
   const [theme, setTheme] = useState("dark");
@@ -39,6 +40,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeContext.Provider value={[theme, setTheme]}>
       <Component {...pageProps} />
+      <Analytics />
     </ThemeContext.Provider>
   );
 }
