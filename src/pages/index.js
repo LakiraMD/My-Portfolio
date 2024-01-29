@@ -58,9 +58,9 @@ const Home = () => {
             <h1 className={styles.heading}>About Me</h1>
             <p className={styles.aboutpara}>
               Meet Lakira Minlaka, a 17-year-old programmer with a passion for
-              innovation. As a student and coding enthusiast, she is constantly
+              innovation. As a student and coding enthusiast, he is constantly
               pushing the limits of what's possible and making a positive impact
-              through her work. Explore her portfolio to see her skills and get
+              through her work. Explore her portfolio to see his skills and get
               a glimpse into the mind of this rising tech star.
             </p>
             <button className={styles.btn1} onClick={toAbout}>
